@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: rgb(240, 237, 237);
+
+        }
+
+        /*对所有的选择器添加属性边框，方便查看布局*/
+        /* * {
+            border: 1px solid black;
+        } */
+
+        .flex {
+            display: flex;
+        }
+
+        .baiSe {
+            background: white;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .mg8 {
+            margin: 8px;
+        }
+
+        .mgl {
+            margin-left: 8px;
+        }
+
+        .mgr {
+            margin-right: 8px;
+        }
+
+        .mgb {
+            margin-bottom: 8px;
+        }
+
+        .mgt {
+            margin-top: 8px;
+        }
+
+        .shadow {
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+                rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px
+        }
+
+        .daohang {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 5px;
+            color: rgb(81, 102, 120);
+            border-bottom: 1px solid #666;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .cebianlan {
+                display: none;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .data {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <!--侧边栏-->
+    <div class="baiSe shadow cebianlan flex column" style="width:200px;z-index:2">
+        <!--头像区+昵称-->
+        <div class="flex" style="border-bottom:1px solid rgb(175, 162, 162);padding:10px;align-items: center;">
+            <img src="https://img2.baidu.com/it/u=3610603417,1894919087&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"
+                alt="头像" width="80px">
+            <div style="margin-left:20px;">想变成光</div>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="flex flex1 column">
+        <!--头部栏-->
+        <div class="baiSe shadow" style="height:100px;z-index:1"></div>
+        <!--内容区-->
+        <div class="flex flex1 content" style="overflow:auto">
+            <!--左区-->
+            <div style="flex:3" class="flex column mg8">
+                <!--上片-->
+                <div class="flex flex1 data">
+                    <div style="height:220px" class="baiSe shadow flex1 mgr"></div>
+                    <div style="height:180px" class="baiSe shadow flex1 mgr"></div>
+                    <div style="height:140px" class="baiSe shadow flex1 mgr"></div>
+                    <div style="height:100px" class="baiSe shadow flex1 "></div>
+                </div>
+                <!--下片-->
+                <div style="flex:3" class="flex column">
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+                    <div style="height:150px;" class="baiSe shadow mgt"></div>
+
+                </div>
+            </div>
+            <!--右区-->
+            <div style="flex:1" class="flex column mgt mgr">
+                <div style="flex:1; height:100px" class="baiSe shadow mgb"></div>
+                <div style="flex:1; height:300px" class="baiSe shadow mgb"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
