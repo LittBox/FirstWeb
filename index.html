@@ -2,72 +2,205 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxの网站</title>
+    <style>
+        body {
+            background: rgba(227, 227, 227, 0.758);
+        }
 
-  <title>index</title>
-  <!--rel relationship stylesheet 样式表-->
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .Center {
-      min-width: 400px;
-      margin: 0 auto;
-    }
+        .baise {
+            background: rgb(251, 251, 251);
+        }
 
-    header {
-      height: 100px;
-      padding: 10px;
-      background: linear-gradient(to bottom right, rgba(0, 255, 106, 0.105), rgba(128, 202, 215, 0.274)), url("picture/onepiecefamily1.png") no-repeat scroll top right;
-      background-size: contain;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 10%;
-      border-style: inset;
-    }
-  </style>
+        /* 每个标签加上边框 */
+        /* * {
+            border: 1px solid black;
+        } */
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .headerRight {
+            text-align: center;
+            font-size: 10px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .mg {
+            margin: 8px;
+        }
+
+        .mgt {
+            margin-top: 8px;
+        }
+
+        .mgb {
+            margin-bottom: 8px;
+        }
+
+        mgl {
+            margin-left: 8px;
+        }
+
+        .mgr {
+            margin-right: 8px;
+        }
+
+        animate {
+            animation: circle 5s linear infinite alternate running;
+            display: block;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: rgb(165, 242, 168);
+            border-radius: 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+
+        }
+
+        @keyframes circle {
+            0% {
+                background: red;
+                left: 0%;
+            }
+
+            25% {
+                background: blue;
+                left: 25%;
+            }
+
+            50% {
+                background: green;
+                left: 50%;
+            }
+
+            75% {
+                background: rgb(186, 63, 120);
+                left: 75%;
+            }
+
+            100% {
+                background: rgb(23, 81, 121);
+                left: 95%;
+            }
+
+        }
+    </style>
 </head>
 
-<body style="background:rgba(205, 243, 206, 0.553);">
-  <div class="Center">
-    <header>
+<body style="min-width:980;" class="flex column">
+    <!--header-->
+    <div class="flex" style="justify-content:space-between;">
+        <!--搜索栏-->
+        <div class="baise" style="width:100px;height:30px;margin-left:8px;margin-top: auto;margin-bottom: auto;">未来的搜索区
+        </div>
+        <!--一些有下拉菜单的选项卡-->
+        <div class="flex mg" style="justify-content:flex-end;">
+            <!--头像+昵称-->
+            <div class="flex mgr" style="border-right:1px solid grey;">
+                <img src="picture/blog.png" alt="头像" width="40px" height="40px">
+                <div class="headerRight">Box</div>
+            </div>
+            <!--我玩过的-->
+            <div class="headerRight mgr" style="border-right:1px solid grey;">我玩过的</div>
+            <!--猜你喜欢-->
+            <div class="headerRight">未来的导航菜单</div>
 
-      <!-- <img src="onepiecefamliy.jpg" alt="" width=100% > -->
-      <img src="picture/dianzhang.png" alt="the picture located in the right of header dianzhang" style="float:left;"
-        height="100px">
-
-    </header>
-  </div>
-  <div class="Center">
-    <ul class="lsno ">
-      <li><a href="flex.html">Home</a>
-      </li>
-
-    </ul>
-  </div>
-  <div class="Center">
-
-    <div>
-
-      <p>Hello World, I am Mr Box.</p>
-      <p>I am a man who is always interested in anything novel.</p>
-      <p>
-        My motto is:"The man who fears losing has already lost.", from
-        <cite>Game of Thrones</cite>
-      </p>
-      <p>I major at computer.</p>
-
-      
-      <p>
-        Inspired by Mr.Kang and Shuangshuang, I decided to join in the YuanDao Community.
-      </p>
-    
+        </div>
     </div>
-  </div>
+    <!--旋转图片栏-->
+    <div style="min-width:96px;min-height:64px;height:64px" class="flex baise">
+        <animate></animate>
+    </div>
+    <!--主要内容栏(设左区和右区)-->
+    <div class="flex" style="flex:1 ">
+        <!--左区（一些文章和日志）-->
+        <div class="flex column mg" style="flex:3">
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">2023/1/4</div>
+                <!--内容-->
+                <div>
+                    今天我仿照4399网页布局了我的个人网站，找个参照真难，我在网上逛了应该有1个多小时了，看了很多的网页布局，都不知道选哪个，最后还是决定仿照4399，因为4399是童年啊，而且我选择计算机专业的初心也是想做游戏，现在能力只能做成这样，但是以后会不断完善的。
+                </div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="baise mgb">
+                <!--日期-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <!--内容-->
+                <div></div>
+            </div>
 
-  <div class="Center">
-    <footer><img src="picture/onepiecefamily2.jpg" alt="onepiecefamily1" width="auto" height="100px"></footer>
-  </div>
+        </div>
+        <!--右区-->
+        <div class="flex column mgt" style="flex:1">
+            <!--微信小程序-->
+            <div style="height:80px;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px">微信小程序</div>
+            </div>
+            <!--我的游戏梦-->
+            <div style="height:80px;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px">网页小游戏</div>
+            </div>
+            <!--想看的番-->
+            <div style="height:80px;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px">番剧清单</div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
