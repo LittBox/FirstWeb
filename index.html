@@ -8,11 +8,11 @@
     <title>Boxの网站</title>
     <style>
         body {
-            background: rgba(227, 227, 227, 0.758);
+            background: rgba(255, 255, 255, 0.758);
         }
 
         .baise {
-            background: rgb(251, 251, 251);
+            background: rgb(218, 244, 205);
         }
 
         /* 每个标签加上边框 */
@@ -91,8 +91,13 @@
 
             100% {
                 background: rgb(23, 81, 121);
-                left: 95%;
+                left: 90%;
             }
+
+        }
+
+        b.se {
+            color: rgb(187, 105, 76);
 
         }
     </style>
@@ -123,7 +128,7 @@
         <animate></animate>
     </div>
     <!--主要内容栏(设左区和右区)-->
-    <div class="flex" style="flex:1 ">
+    <div class="flex" style="flex:1;">
         <!--左区（一些文章和日志）-->
         <div class="flex column mg" style="flex:3">
             <div style="height:100px;overflow:auto;" class="baise mgb">
@@ -136,9 +141,33 @@
             </div>
             <div style="height:100px;overflow:auto;" class="baise mgb">
                 <!--日期-->
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;"></div>
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
+                    class="flex">
+                    <div>2023/1/5</div>
+                    <div>vscode使用，插件与配置</div>
+                    <div></div>
+                </div>
                 <!--内容-->
-                <div></div>
+                <div>
+                    (一)插件：<br>1.Chinese： 中文界面。<br>2.Prettier:
+                    代码格式美化。（个人认为，用处不大，因为我觉得默认的格式也挺不错的）<br>3.Live
+                    preview: 实时预览html。<br>4.Search/Translate Hero:
+                    搜索跳转和翻译。（该插件的图标是一个搜索框，建议把默认搜索引擎改成bing，这个在拓展设置里改，如果改不了，按F1输入restart选择重启拓展宿主，还不行的话就重启vscode）<br>5.Git
+                    History Diff:查看git历史版本的不同。<br>（二）配置：（文件
+                    -> 首选项） <br>1.Format On Save: 勾选，保存（快捷ctrl +
+                    s）后自动格式化。<br>2.Format On Paste:
+                    粘贴时自动格式化。<br>3.Default Formatter:
+                    选择Pettier，将它设为默认格式化。<br>4.Linking
+                    Editing:同时重命名html标签名，改开头标签，对应的结束标签也会改。
+                    <br>5.Accept suggestions on
+                    enter:关闭，回车就不会自动补全，而是换行了。<br>（三）其他内容：<br>下载了node.js和git<br>vscode文件系统<br>授课教师：<a
+                        href="https://space.bilibili.com/34786453" target="_blank">康文昌
+                    </a><br>教材：<a
+                        href="https://www.bilibili.com/video/BV1k34y1Y7xk/?spm_id_from=333.788&vd_source=dbf9348ff650d5a6ef293f7ea25912ec"
+                        target="_blank">B站视频：编程软件下载，vscode插件和配置；node.js和git的下载。
+                    </a><br>
+                    <a href="https://www.midorg.com/vsc.html" target="_blank">视频中的网页</a>
+                </div>
             </div>
             <div style="height:100px;overflow:auto;" class="baise mgb">
                 <!--日期-->
@@ -186,17 +215,30 @@
         </div>
         <!--右区-->
         <div class="flex column mgt" style="flex:1">
+            <!--属性与值-->
+            <div style="height:80px;overflow:auto;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">属性与值</div>
+                <div style="font-size:10px;"><b class="se">target：<br>"_blank"：</b>在新窗口打开链接<br><b
+                        class="se">"_self":</b>默认值，当前页面跳转
+                </div>
+            </div>
+            <!--符号翻译-->
+            <div style="height:80px;overflow:auto;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">HTML标签符号</div>
+                <div style="font-size:10px;"><b class="se">& nbsp：</b>空格符
+                </div>
+            </div>
             <!--微信小程序-->
-            <div style="height:80px;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px">微信小程序</div>
+            <div style="height:80px;overflow:auto;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">微信小程序</div>
             </div>
             <!--我的游戏梦-->
-            <div style="height:80px;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px">网页小游戏</div>
+            <div style="height:80px;overflow:auto;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">网页小游戏</div>
             </div>
             <!--想看的番-->
-            <div style="height:80px;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px">番剧清单</div>
+            <div style="height:80px;overflow:auto;" class="baise mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">番剧清单</div>
             </div>
         </div>
     </div>
