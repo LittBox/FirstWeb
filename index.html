@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="picture/bitbug_favicon.ico">
     <title>Boxの网站</title>
     <style>
         body {
             background: rgba(255, 255, 255, 0.758);
         }
 
-        .baise {
+        .card {
             background: rgb(218, 244, 205);
         }
 
@@ -65,7 +66,6 @@
             border-radius: 30px;
             margin-top: auto;
             margin-bottom: auto;
-
         }
 
         @keyframes circle {
@@ -107,8 +107,13 @@
     <!--header-->
     <div class="flex" style="justify-content:space-between;">
         <!--搜索栏-->
-        <div class="baise" style="width:100px;height:30px;margin-left:8px;margin-top: auto;margin-bottom: auto;">未来的搜索区
+        <div style="margin:auto;">
+            <!--这个以后可以实现调整网站背景色-->
+            <input type="range">
+            <input type="radio" name="1">apple
+            <input type="radio" name="1">banana
         </div>
+
         <!--一些有下拉菜单的选项卡-->
         <div class="flex mg" style="justify-content:flex-end;">
             <!--头像+昵称-->
@@ -124,14 +129,14 @@
         </div>
     </div>
     <!--旋转图片栏-->
-    <div style="min-width:96px;min-height:64px;height:64px" class="flex baise">
+    <div style="min-width:96px;min-height:64px;height:64px" class="flex card">
         <animate></animate>
     </div>
     <!--主要内容栏(设左区和右区)-->
     <div class="flex" style="flex:1;">
         <!--左区（一些文章和日志）-->
         <div class="flex column mg" style="flex:3">
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -150,7 +155,7 @@
                     </a>
                 </div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--日期-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -180,7 +185,32 @@
                     <a href="https://www.midorg.com/vsc.html" target="_blank">视频中的网页</a>
                 </div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
+                <!--标题-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
+                    class="flex">
+                    <div>2023/1/5</div>
+                    <div>HTML中标签的嵌套原则</div>
+                    <div></div><!--格式控制需要-->
+                </div>
+                <!--内容-->
+                <div><a href="https://blog.csdn.net/yyl927117/article/details/70230044" target="_blank">主要内容
+                    </a></div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="card mgb">
+                <!--标题-->
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
+                    class="flex">
+                    <div>2023/1/6</div>
+                    <div>input，details为网站添砖加瓦</div>
+                    <div></div><!--格式控制需要-->
+                </div>
+                <!--内容-->
+                <div>
+                    今天，我在右边的小知识栏新添了导航功能，这是在details标签中内嵌列表标签（ul），列表项（li）中在嵌套a标签实现的。<br>今天才知道a标签可以连接到本页的某个位置，用id标明就行。左上角的那个打算做成一个可以调节背景颜色的，准备进军JS啦。<br>今天给我的网页link了一个icon。
+                </div>
+            </div>
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -191,7 +221,7 @@
                 <!--内容-->
                 <div></div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -202,7 +232,7 @@
                 <!--内容-->
                 <div></div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -213,7 +243,7 @@
                 <!--内容-->
                 <div></div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -224,7 +254,7 @@
                 <!--内容-->
                 <div></div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
+            <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
@@ -235,48 +265,35 @@
                 <!--内容-->
                 <div></div>
             </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
-                <!--标题-->
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
-                    class="flex">
-                    <div>日期</div>
-                    <div>主题</div>
-                    <div></div><!--格式控制需要-->
-                </div>
-                <!--内容-->
-                <div></div>
-            </div>
-            <div style="height:100px;overflow:auto;" class="baise mgb">
-                <!--标题-->
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
-                    class="flex">
-                    <div>日期</div>
-                    <div>主题</div>
-                    <div></div><!--格式控制需要-->
-                </div>
-                <!--内容-->
-                <div></div>
-            </div>
-
         </div>
         <!--右区-->
         <div class="flex column mgt" style="flex:1">
+            <!--导航-->
+            <details>
+                <summary>快速到达</summary>
+                <ul>
+                    <li><a href="#1">属性与值</a></li>
+                    <li><a href="#2">HTML标签符号</a></li>
+                    <li><a href="#3">快捷键</a></li>
+                    <li><a href="#4">注意事项</a></li>
+                </ul>
+            </details>
             <!--属性与值-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">属性与值</div>
+            <div style="height:80px;overflow:auto;" class="card mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="1">属性与值</div>
                 <div style="font-size:10px;"><b class="se">target：<br>"_blank"：</b>在新窗口打开链接<br><b
                         class="se">"_self":</b>默认值，当前页面跳转
                 </div>
             </div>
             <!--符号翻译-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">HTML标签符号</div>
+            <div style="height:80px;overflow:auto;" class="card mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="2">HTML标签符号</div>
                 <div style="font-size:10px;"><b class="se">& nbsp：</b>空格符
                 </div>
             </div>
             <!--快捷键-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">快捷键</div>
+            <div style="height:80px;overflow:auto;" class="card mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="3">快捷键</div>
                 <div style="font-size:10px;"><b class="se">ctrl + d：</b>选择下一个相同的字符直到相同的全部选完（从光标所在往下）。
                     <br><b class="se">alt + 鼠标左键：
                     </b>添加光标。
@@ -288,22 +305,22 @@
                 </div>
             </div>
             <!--一些注意事项-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">注意事项</div>
+            <div style="height:80px;overflow:auto;" class="card mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="4">注意事项</div>
                 <div style="font-size:10px;">1.文件尽量英文命名，live preview插件不支持中文名文件（中文名文件用live preview会乱码）。</div>
             </div>
             <!--微信小程序-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
+            <div style="height:80px;overflow:auto;" class="card mgb">
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">微信小程序</div>
                 <div style="font-size:10px;"></div>
             </div>
             <!--我的游戏梦-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
+            <div style="height:80px;overflow:auto;" class="card mgb">
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">网页小游戏</div>
                 <div style="font-size:10px;"></div>
             </div>
             <!--想看的番-->
-            <div style="height:80px;overflow:auto;" class="baise mgb">
+            <div style="height:80px;overflow:auto;" class="card mgb">
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">番剧清单</div>
                 <div style="font-size:10px;"></div>
             </div>
