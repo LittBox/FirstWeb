@@ -48,7 +48,7 @@
             margin-bottom: 8px;
         }
 
-        mgl {
+        .mgl {
             margin-left: 8px;
         }
 
@@ -66,6 +66,13 @@
             border-radius: 30px;
             margin-top: auto;
             margin-bottom: auto;
+        }
+
+        code.button {
+            color: black;
+            background: rgb(242, 241, 241);
+            padding: 2px;
+            border-radius: 50px;
         }
 
         @keyframes circle {
@@ -99,6 +106,10 @@
         b.se {
             color: rgb(187, 105, 76);
 
+        }
+
+        b.short:hover {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -214,23 +225,37 @@
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
-                    <div>日期</div>
-                    <div>主题</div>
+                    <div>2023/1/12</div>
+                    <div>用table做个课程表</div>
                     <div></div><!--格式控制需要-->
                 </div>
                 <!--内容-->
-                <div></div>
+                <div><a href="test.html">课程表</a></div>
             </div>
             <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;justify-content:space-between;"
                     class="flex">
-                    <div>日期</div>
-                    <div>主题</div>
+                    <div>2023/1/22</div>
+                    <div>CSS攀爬效果</div>
                     <div></div><!--格式控制需要-->
                 </div>
                 <!--内容-->
-                <div></div>
+                <div>
+                    <a href="ClimbingEffect.html">效果展示</a> <br>1.<code
+                        class="button">box-sizing:content-box/border-box;</code>计算元素的宽高（计算盒子尺寸）是只包括内容区，还是包括边界和内边距。
+                    <br>2.<code class="button" title="view height-视窗高度">vh</code>1vh代表视窗的1%。
+                    <br>3.<code class="button">box-shadow: 0 0 5px rgba(3, 233, 244, 1);</code>
+                    //第一个参数为阴影左右移动的大小，第二个为上下，第三个为边界过渡，越小，边界的色彩过渡越明显。
+                    <br>4.<code class="button">animation: animateSurface 1.5s ease-in-out infinite;</code><a
+                        href="https://www.runoob.com/cssref/css3-pr-animation.html">相关属性与值</a>
+                    <br>5.<code class="button">calc()</code>+，-运算量要有空格符，*，/不需要<a
+                        href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/calc">详情请点击</a>
+                    <br>参考：<a
+                        href="https://www.bilibili.com/video/BV1bS4y177dx/?p=4&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=dbf9348ff650d5a6ef293f7ea25912ec">1.CSS加载动画P4</a>
+                    <br><a
+                        href="https://blog.csdn.net/sinat_36146776/article/details/52725258">CSS3.0新属性之box-reflect(倒影)</a>
+                </div>
             </div>
             <div style="height:100px;overflow:auto;" class="card mgb">
                 <!--标题-->
@@ -273,7 +298,7 @@
                 <summary>快速到达</summary>
                 <ul>
                     <li><a href="#1">属性与值</a></li>
-                    <li><a href="#2">HTML标签符号</a></li>
+                    <li><a href="#2">HTML符号</a></li>
                     <li><a href="#3">快捷键</a></li>
                     <li><a href="#4">注意事项</a></li>
                 </ul>
@@ -287,8 +312,11 @@
             </div>
             <!--符号翻译-->
             <div style="height:80px;overflow:auto;" class="card mgb">
-                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="2">HTML标签符号</div>
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="2">HTML符号</div>
                 <div style="font-size:10px;"><b class="se">& nbsp：</b>空格符
+                    <br><b class="se">& lt：</b>
+                    < <br><b class="se">& gt：</b>>
+                        <br><b class="se">& #169：</b>©
                 </div>
             </div>
             <!--快捷键-->
@@ -308,6 +336,14 @@
             <div style="height:80px;overflow:auto;" class="card mgb">
                 <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;" id="4">注意事项</div>
                 <div style="font-size:10px;">1.文件尽量英文命名，live preview插件不支持中文名文件（中文名文件用live preview会乱码）。</div>
+            </div>
+            <!--计算机字母简写翻译-->
+            <div style="height:80px;overflow:auto;" class="card mgb">
+                <div style="background:rgb(175, 214, 175);height:15px;font-size:10px;">计算机字母简写翻译</div>
+                <div style="font-size:10px;">
+                    <b class="short se" title="graphical user interface">GUI：</b> 图形用户交互
+                    <br>
+                </div>
             </div>
             <!--微信小程序-->
             <div style="height:80px;overflow:auto;" class="card mgb">
